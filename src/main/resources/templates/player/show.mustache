@@ -1,0 +1,25 @@
+{{>layouts/header}}
+{{#player}}
+<table class="table table-success table-striped">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">LEAGUE</th>
+        <th scope="col">SCHEDULE</th>
+        <th scope="col">CONTENT</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th>{{id}}</th>
+        <td>{{league}}</td>
+        <td>{{schedule}}</td>
+        <td>{{content}}</td>
+    </tr>
+    </tbody>
+</table>
+{{/player}}
+<a href="/player/{{player.id}}/edit" class="btn btn-primary">수정</a>
+<a href="/player/{{player.id}}/delete" class="btn btn-danger">삭제</a>
+<a href="/players" class="btn btn-primary">목록</a>
+
